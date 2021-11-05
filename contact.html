@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chi's Cake blog</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/coverpage.jfif" alt="Notebook" class="responsive" >
+            <h1 class="content">Chi's Cake</h1>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="details-1.html">Classic Yellow Cake</a>
+                <a href="details-2.html">Coconut Bundt Cake</a>
+                <a href="details-3.html">Cream Chese Puond Cake</a>
+                <a href="details-4.html">German Chocolate Cake</a>
+              </div>
+            </div> 
+            <a href="about.html">About</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact me</h1>
+        <hr>
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name" class="text">Your name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="name" id="name" oninput="myFunction1()" placeholder="Please enter your full name here"><br>
+                        <p id="Error_name"></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email" class="text">Your email:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email" oninput="myFunction2()" placeholder="Please enter your mail here" required><br>
+                        <p id="Error_email"></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="birth" class="text">Subject:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="subject" id="subject" oninput="myFunction3()"><br>
+                        <p id="Error_subject"></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message" class="text">Message:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" rows="4" cols="50" oninput="myFunction4()"></textarea><br>
+                        <p id="Error_message"></p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <input type="submit" id="contact"  value="Send message">
+                </div>
+        
+            </form>
+        </div>
+        
+    </main>
+
+    <footer  class="header">
+        <p>© 2023 by Chi's Cake</p>
+    </footer>
+
+</body>
+<script src="js/contact.js"></script>
+</html>

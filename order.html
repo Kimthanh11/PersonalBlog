@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chi's Cake blog</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/coverpage.jfif" alt="Notebook" class="responsive" >
+            <h1 class="content">Chi's Cake</h1>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="details-1.html">Classic Yellow Cake</a>
+                <a href="details-2.html">Coconut Bundt Cake</a>
+                <a href="details-3.html">Cream Chese Puond Cake</a>
+                <a href="details-4.html">German Chocolate Cake</a>
+              </div>
+            </div> 
+            <a href="about.html">About</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Order now</h1>
+        <hr>
+
+        
+            <div class="container">
+                <form action="">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cake" class="text">Cake name:</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="cake" name="cake">
+                                <option value="--- Select cake ---">--- Select cake ---</option>
+                                <option value="Classic Yellow Cake">Classic Yellow Cake</option>
+                                <option value="Coconut Bundt Cake">Coconut Bundt Cake</option>
+                                <option value="Cream Cheese Pound Cake">Cream Cheese Pound Cake</option>
+                                <option value="German Chocolate Cake">German Chocolate Cake</option>
+                            </select>
+                            <p id="Error_cake"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name" class="text">Your name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="name" id="name" maxlength="100" class="answer" required><br>
+                            <p id="Error_name"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="message" class="text">Message:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="message" id="message" class="answer" placeholder="type your text that write on the cake..." maxlength="30" size="50"><br>
+                            <p id="Error_message"></p>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="includes" class="text">Includes:</label><br>
+                        </div>
+                        <div class="col-75">
+                            <input type="checkbox" id="includes1" name="includes1" value="Candle">
+                            <label for="includes1" class="text"> Candle</label><br>
+        
+                            <input type="checkbox" id="includes2" name="includes2" value="Firework">
+                            <label for="includes2" class="text"> Firework</label><br>
+        
+                            <input type="checkbox" id="includes3" name="includes3" value="Toys">
+                            <label for="includes3" class="text"> Toys</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="date" class="text">Deliver date:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" name="date" id="date" required><br> 
+                            <p id="Error_date"></p>
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="call" class="text">Call before deliver:</label><br>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="call1" name="call1" value="Yes">
+                            <label for="call1" class="text">Yes</label><br>
+        
+                            <input type="radio" id="call2" name="call2" value="No">
+                            <label for="call2" class="text">No</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="address" class="text">Deliver to:</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="address" name="address" class="answer" rows="4" cols="50" maxlength="500"></textarea><br>
+                            <p id="Error_address"></p>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <input type="submit" id="order" value="Submit">
+                    </div>
+                    
+            
+                </form>
+            </div>
+            
+    </main>
+
+    <footer  class="header">
+        <p>© 2023 by Chi's Cake</p>
+    </footer>
+
+</body>
+<script src="js/order.js"></script>
+</html>
